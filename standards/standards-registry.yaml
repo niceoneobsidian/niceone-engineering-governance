@@ -1,0 +1,122 @@
+[
+  {
+    "id": "STD-SSDF-800-218",
+    "publisher": "NIST",
+    "title": "Secure Software Development Framework",
+    "version": "SP 800-218 v1.1",
+    "source_url": "https://csrc.nist.gov/pubs/sp/800/218/final",
+    "status": "verified_source",
+    "type": "government_guidance",
+    "mapping_status": "not_assessed"
+  },
+  {
+    "id": "STD-NIST-AIRMF",
+    "publisher": "NIST",
+    "title": "AI Risk Management Framework",
+    "version": "1.0; verify updates",
+    "source_url": "https://airc.nist.gov/airmf-resources/airmf/",
+    "status": "verified_source",
+    "type": "voluntary_framework",
+    "mapping_status": "not_assessed"
+  },
+  {
+    "id": "STD-ISO-12207",
+    "publisher": "ISO/IEC/IEEE",
+    "title": "Software life cycle processes",
+    "version": "2026 edition; verify current metadata",
+    "source_url": "https://www.iso.org/standard/90219.html",
+    "status": "candidate",
+    "type": "international_standard",
+    "mapping_status": "not_assessed"
+  },
+  {
+    "id": "STD-ISO-15288",
+    "publisher": "ISO/IEC/IEEE",
+    "title": "System life cycle processes",
+    "version": "2023 edition; verify current metadata",
+    "source_url": "https://www.iso.org/standard/81702.html",
+    "status": "candidate",
+    "type": "international_standard",
+    "mapping_status": "not_assessed"
+  },
+  {
+    "id": "STD-OWASP-ASVS",
+    "publisher": "OWASP",
+    "title": "Application Security Verification Standard",
+    "version": "Verify latest version",
+    "source_url": "https://owasp.org/www-project-application-security-verification-standard/",
+    "status": "candidate",
+    "type": "community_standard",
+    "mapping_status": "not_assessed"
+  },
+  {
+    "id": "STD-OWASP-SAMM",
+    "publisher": "OWASP",
+    "title": "Software Assurance Maturity Model",
+    "version": "Verify current model",
+    "source_url": "https://owaspsamm.org/model/",
+    "status": "candidate",
+    "type": "maturity_model",
+    "mapping_status": "not_assessed"
+  },
+  {
+    "id": "STD-OPENAPI",
+    "publisher": "OpenAPI Initiative",
+    "title": "OpenAPI Specification",
+    "version": "3.2.1 candidate; verify latest",
+    "source_url": "https://spec.openapis.org/oas/v3.2.1.html",
+    "status": "candidate",
+    "type": "interface_specification",
+    "mapping_status": "not_assessed"
+  },
+  {
+    "id": "STD-WCAG",
+    "publisher": "W3C",
+    "title": "Web Content Accessibility Guidelines",
+    "version": "2.2",
+    "source_url": "https://www.w3.org/WAI/standards-guidelines/wcag/",
+    "status": "verified_source",
+    "type": "web_standard",
+    "mapping_status": "not_assessed"
+  },
+  {
+    "id": "STD-OTEL",
+    "publisher": "OpenTelemetry",
+    "title": "OpenTelemetry documentation",
+    "version": "Mutable current docs",
+    "source_url": "https://opentelemetry.io/docs/",
+    "status": "candidate",
+    "type": "technical_guidance",
+    "mapping_status": "not_assessed"
+  },
+  {
+    "id": "STD-DORA",
+    "publisher": "DORA",
+    "title": "Software delivery performance metrics",
+    "version": "Mutable current guidance",
+    "source_url": "https://dora.dev/guides/dora-metrics/",
+    "status": "candidate",
+    "type": "measurement_guidance",
+    "mapping_status": "not_assessed"
+  },
+  {
+    "id": "STD-GOOGLE-ENG",
+    "publisher": "Google",
+    "title": "Engineering Practices",
+    "version": "Mutable current guidance",
+    "source_url": "https://google.github.io/eng-practices/",
+    "status": "candidate",
+    "type": "engineering_guidance",
+    "mapping_status": "not_assessed"
+  },
+  {
+    "id": "STD-NIST-AGENTS",
+    "publisher": "NIST",
+    "title": "AI Agent Standards Initiative",
+    "version": "Emerging initiative; verify status",
+    "source_url": "https://www.nist.gov/news-events/news/2026/02/announcing-ai-agent-standards-initiative-interoperable-and-secure",
+    "status": "candidate",
+    "type": "emerging_initiative",
+    "mapping_status": "not_assessed"
+  }
+]
