@@ -1,0 +1,89 @@
+[
+  {
+    "id": "OIS-ARCH-001",
+    "name": "Architecture boundary integrity",
+    "required": true,
+    "risk_min": "R2",
+    "acceptance": "No unapproved boundary violations.",
+    "evidence": [
+      "architecture_review",
+      "decision_record"
+    ]
+  },
+  {
+    "id": "OIS-SEC-001",
+    "name": "Protected action authorization",
+    "required": true,
+    "risk_min": "R3",
+    "acceptance": "Zero unauthorized protected actions in defined test scope.",
+    "evidence": [
+      "authorization_tests",
+      "policy_decision_records"
+    ]
+  },
+  {
+    "id": "OIS-EXEC-001",
+    "name": "Governed execution evidence",
+    "required": true,
+    "risk_min": "R2",
+    "acceptance": "Protected executions have required decision, actor, target, outcome and validation evidence.",
+    "evidence": [
+      "execution_records",
+      "evidence_validation"
+    ]
+  },
+  {
+    "id": "OIS-STATE-001",
+    "name": "State transition integrity",
+    "required": true,
+    "risk_min": "R2",
+    "acceptance": "Illegal transitions rejected and valid transitions persisted.",
+    "evidence": [
+      "state_transition_tests"
+    ]
+  },
+  {
+    "id": "OIS-REC-001",
+    "name": "Recovery behavior",
+    "required": true,
+    "risk_min": "R2",
+    "acceptance": "Defined failures recover safely or end explicitly blocked.",
+    "evidence": [
+      "recovery_test_results"
+    ]
+  },
+  {
+    "id": "OIS-TEST-001",
+    "name": "Regression verification",
+    "required": true,
+    "risk_min": "R1",
+    "acceptance": "Required tests pass; skipped checks and reasons are reported.",
+    "evidence": [
+      "test_report",
+      "revision"
+    ]
+  },
+  {
+    "id": "OIS-REL-001",
+    "name": "Release acceptance",
+    "required": true,
+    "risk_min": "R3",
+    "acceptance": "Release criteria, rollback plan and approvals are satisfied.",
+    "evidence": [
+      "release_checklist",
+      "approval_record",
+      "rollback_plan"
+    ]
+  },
+  {
+    "id": "OIS-OBS-001",
+    "name": "Operational observability",
+    "required": true,
+    "risk_min": "R2",
+    "acceptance": "Critical failures have actionable, privacy-safe signals.",
+    "evidence": [
+      "telemetry_review",
+      "alert_or_failure_test"
+    ]
+  }
+]
