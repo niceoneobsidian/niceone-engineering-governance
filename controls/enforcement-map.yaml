@@ -1,0 +1,99 @@
+[
+  {
+    "id": "CORE-AUTH-001",
+    "control": "CORE-AUTH-001",
+    "target": "OIS runtime and AI agents",
+    "enforcement_point": "Runtime authorization and platform permissions",
+    "mode": "required",
+    "status": "not_verified",
+    "evidence_required": [
+      "configuration_reference",
+      "positive_and_negative_tests"
+    ]
+  },
+  {
+    "id": "CORE-SCOPE-001",
+    "control": "CORE-SCOPE-001",
+    "target": "Repository changes",
+    "enforcement_point": "Agent runtime, diff review and CI",
+    "mode": "required",
+    "status": "not_verified",
+    "evidence_required": [
+      "scope_record",
+      "diff_review"
+    ]
+  },
+  {
+    "id": "CORE-SEC-001",
+    "control": "CORE-SEC-001",
+    "target": "All repositories",
+    "enforcement_point": "Secret scanner, repository settings and secret manager",
+    "mode": "required",
+    "status": "not_verified",
+    "evidence_required": [
+      "scanner_run",
+      "finding_dispositions"
+    ]
+  },
+  {
+    "id": "CORE-TEST-001",
+    "control": "CORE-TEST-001",
+    "target": "Pull requests",
+    "enforcement_point": "CI and review",
+    "mode": "required",
+    "status": "not_verified",
+    "evidence_required": [
+      "workflow_run",
+      "required_check_configuration"
+    ]
+  },
+  {
+    "id": "CORE-EVID-001",
+    "control": "CORE-EVID-001",
+    "target": "Completion reports",
+    "enforcement_point": "PR template, review and audit",
+    "mode": "required",
+    "status": "not_verified",
+    "evidence_required": [
+      "report_reference",
+      "artifact_or_run_id"
+    ]
+  },
+  {
+    "id": "CORE-REC-001",
+    "control": "CORE-REC-001",
+    "target": "Stateful workflows",
+    "enforcement_point": "Runtime recovery logic and repository procedures",
+    "mode": "risk_based",
+    "status": "not_verified",
+    "evidence_required": [
+      "recovery_test",
+      "recovery_runbook"
+    ]
+  },
+  {
+    "id": "CORE-EXC-001",
+    "control": "CORE-EXC-001",
+    "target": "Governance exceptions",
+    "enforcement_point": "Governance register and validator",
+    "mode": "required",
+    "status": "not_verified",
+    "evidence_required": [
+      "approved_exception_record",
+      "expiry_check"
+    ]
+  },
+  {
+    "id": "CORE-REV-001",
+    "control": "CORE-REV-001",
+    "target": "Protected branches",
+    "enforcement_point": "GitHub rulesets/branch protection",
+    "mode": "required",
+    "status": "not_verified",
+    "evidence_required": [
+      "ruleset_configuration",
+      "required_checks",
+      "review_policy"
+    ]
+  }
+]
