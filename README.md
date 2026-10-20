@@ -30,7 +30,7 @@ python -m unittest discover -s tests -v
 python tooling/validate_registry.py
 python tooling/resolve_profile.py niceone-obsidian
 python tooling/resolve_profile.py ai-agents
-python tooling/evaluate_policy.py --profile ai-agents --action protected_write --risk R2
+python tooling/evaluate_policy.py --profile ai-agents --action read --risk R0
 ```
 
 The policy evaluator is a reference tool, not an authorization service. Real permissions must be enforced by trusted runtime, GitHub, CI, operating-system or deployment controls.
