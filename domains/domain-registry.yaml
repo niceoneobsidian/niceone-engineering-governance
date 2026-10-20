@@ -1,0 +1,242 @@
+[
+  {
+    "id": "DOM-01",
+    "slug": "product-strategy",
+    "name": "Product Strategy",
+    "description": "Objectives, user value, scope, trade-offs and measurable outcomes.",
+    "status": "defined",
+    "profile_path": "domains/profiles/product-strategy.md",
+    "applies_to": [
+      "niceone-obsidian",
+      "ai-agents"
+    ]
+  },
+  {
+    "id": "DOM-02",
+    "slug": "requirements-engineering",
+    "name": "Requirements Engineering",
+    "description": "Traceable requirements, acceptance criteria, assumptions and change control.",
+    "status": "defined",
+    "profile_path": "domains/profiles/requirements-engineering.md",
+    "applies_to": [
+      "niceone-obsidian",
+      "ai-agents"
+    ]
+  },
+  {
+    "id": "DOM-03",
+    "slug": "ux-ui-design",
+    "name": "UX/UI Design",
+    "description": "User journeys, usability, accessibility, design states and research evidence.",
+    "status": "defined",
+    "profile_path": "domains/profiles/ux-ui-design.md",
+    "applies_to": [
+      "niceone-obsidian",
+      "ai-agents"
+    ]
+  },
+  {
+    "id": "DOM-04",
+    "slug": "data-architecture",
+    "name": "Data Architecture",
+    "description": "Data ownership, models, quality, lineage, retention and lifecycle.",
+    "status": "defined",
+    "profile_path": "domains/profiles/data-architecture.md",
+    "applies_to": [
+      "niceone-obsidian",
+      "ai-agents"
+    ]
+  },
+  {
+    "id": "DOM-05",
+    "slug": "application-development",
+    "name": "Application Development",
+    "description": "Implementation quality, modularity, error handling and maintainable code.",
+    "status": "defined",
+    "profile_path": "domains/profiles/application-development.md",
+    "applies_to": [
+      "niceone-obsidian",
+      "ai-agents"
+    ]
+  },
+  {
+    "id": "DOM-06",
+    "slug": "testing-quality-assurance",
+    "name": "Testing and Quality Assurance",
+    "description": "Risk-based test strategy, regression coverage, test reliability and defect handling.",
+    "status": "defined",
+    "profile_path": "domains/profiles/testing-quality-assurance.md",
+    "applies_to": [
+      "niceone-obsidian",
+      "ai-agents"
+    ]
+  },
+  {
+    "id": "DOM-07",
+    "slug": "security-architecture",
+    "name": "Security Architecture",
+    "description": "Threat modeling, trust boundaries, identity, authorization, secrets and secure defaults.",
+    "status": "defined",
+    "profile_path": "domains/profiles/security-architecture.md",
+    "applies_to": [
+      "niceone-obsidian",
+      "ai-agents"
+    ]
+  },
+  {
+    "id": "DOM-08",
+    "slug": "devops-ci-cd",
+    "name": "DevOps and CI/CD",
+    "description": "Repeatable builds, pipeline permissions, dependency controls and deployment automation.",
+    "status": "defined",
+    "profile_path": "domains/profiles/devops-ci-cd.md",
+    "applies_to": [
+      "niceone-obsidian",
+      "ai-agents"
+    ]
+  },
+  {
+    "id": "DOM-09",
+    "slug": "infrastructure-architecture",
+    "name": "Infrastructure Architecture",
+    "description": "Runtime environments, network boundaries, capacity, resilience and configuration.",
+    "status": "defined",
+    "profile_path": "domains/profiles/infrastructure-architecture.md",
+    "applies_to": [
+      "niceone-obsidian",
+      "ai-agents"
+    ]
+  },
+  {
+    "id": "DOM-10",
+    "slug": "observability-monitoring",
+    "name": "Observability and Monitoring",
+    "description": "Logs, metrics, traces, alerts, operational context and privacy-safe diagnostics.",
+    "status": "defined",
+    "profile_path": "domains/profiles/observability-monitoring.md",
+    "applies_to": [
+      "niceone-obsidian",
+      "ai-agents"
+    ]
+  },
+  {
+    "id": "DOM-11",
+    "slug": "release-deployment-management",
+    "name": "Release and Deployment Management",
+    "description": "Release criteria, approvals, rollout, rollback and release evidence.",
+    "status": "defined",
+    "profile_path": "domains/profiles/release-deployment-management.md",
+    "applies_to": [
+      "niceone-obsidian",
+      "ai-agents"
+    ]
+  },
+  {
+    "id": "DOM-12",
+    "slug": "maintenance-technical-debt",
+    "name": "Maintenance and Technical Debt",
+    "description": "Supported versions, ownership, defect remediation and debt decisions.",
+    "status": "defined",
+    "profile_path": "domains/profiles/maintenance-technical-debt.md",
+    "applies_to": [
+      "niceone-obsidian",
+      "ai-agents"
+    ]
+  },
+  {
+    "id": "DOM-13",
+    "slug": "project-management",
+    "name": "Project Management",
+    "description": "Ownership, planning, dependencies, risk tracking and status accuracy.",
+    "status": "defined",
+    "profile_path": "domains/profiles/project-management.md",
+    "applies_to": [
+      "niceone-obsidian",
+      "ai-agents"
+    ]
+  },
+  {
+    "id": "DOM-14",
+    "slug": "software-development-lifecycle",
+    "name": "Software Development Lifecycle",
+    "description": "Lifecycle stages, gates, deliverables, verification and controlled change.",
+    "status": "defined",
+    "profile_path": "domains/profiles/software-development-lifecycle.md",
+    "applies_to": [
+      "niceone-obsidian",
+      "ai-agents"
+    ]
+  },
+  {
+    "id": "DOM-15",
+    "slug": "system-architecture",
+    "name": "System Architecture",
+    "description": "System boundaries, components, quality attributes and architecture decisions.",
+    "status": "defined",
+    "profile_path": "domains/profiles/system-architecture.md",
+    "applies_to": [
+      "niceone-obsidian",
+      "ai-agents"
+    ]
+  },
+  {
+    "id": "DOM-16",
+    "slug": "software-design",
+    "name": "Software Design",
+    "description": "Responsibilities, cohesion, coupling, interfaces and design trade-offs.",
+    "status": "defined",
+    "profile_path": "domains/profiles/software-design.md",
+    "applies_to": [
+      "niceone-obsidian",
+      "ai-agents"
+    ]
+  },
+  {
+    "id": "DOM-17",
+    "slug": "api-integration-architecture",
+    "name": "API and Integration Architecture",
+    "description": "Contracts, compatibility, identity, retries, idempotency and failure behavior.",
+    "status": "defined",
+    "profile_path": "domains/profiles/api-integration-architecture.md",
+    "applies_to": [
+      "niceone-obsidian",
+      "ai-agents"
+    ]
+  },
+  {
+    "id": "DOM-18",
+    "slug": "ai-agent-architecture",
+    "name": "AI and Agent Architecture",
+    "description": "Agent boundaries, tools, context, planning, permissions, evaluation and oversight.",
+    "status": "defined",
+    "profile_path": "domains/profiles/ai-agent-architecture.md",
+    "applies_to": [
+      "niceone-obsidian",
+      "ai-agents"
+    ]
+  },
+  {
+    "id": "DOM-19",
+    "slug": "documentation-knowledge-management",
+    "name": "Documentation and Knowledge Management",
+    "description": "Source of truth, instructions, decisions, evidence provenance and discoverability.",
+    "status": "defined",
+    "profile_path": "domains/profiles/documentation-knowledge-management.md",
+    "applies_to": [
+      "niceone-obsidian",
+      "ai-agents"
+    ]
+  },
+  {
+    "id": "DOM-20",
+    "slug": "governance-continuous-improvement",
+    "name": "Governance and Continuous Improvement",
+    "description": "Policies, metrics, exceptions, audit, incidents and learning loops.",
+    "status": "defined",
+    "profile_path": "domains/profiles/governance-continuous-improvement.md",
+    "applies_to": [
+      "niceone-obsidian",
+      "ai-agents"
+    ]
+  }
+]
