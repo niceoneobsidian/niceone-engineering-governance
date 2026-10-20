@@ -1,0 +1,30 @@
+name: NUEGS validation
+
+on:
+  push:
+    branches: [main, "feat/**", "fix/**", "chore/**"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: NUEGS registry and policy tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -v
+      - name: Validate registries
+        run: python tooling/validate_registry.py
+      - name: Resolve profiles
+        run: |
+          python tooling/resolve_profile.py niceone-obsidian
+          python tooling/resolve_profile.py ai-agents
