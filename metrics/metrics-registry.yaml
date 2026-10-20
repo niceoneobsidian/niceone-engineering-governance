@@ -1,0 +1,176 @@
+[
+  {
+    "id": "OIS-ARCH-001",
+    "name": "Unapproved architecture boundary violations",
+    "profile": "niceone-obsidian",
+    "unit": "count",
+    "direction": "lower_is_better",
+    "target": 0,
+    "definition": "Confirmed changes violating approved architecture without an approved decision or exception.",
+    "source": "Reviews and conformance checks",
+    "cadence": "per change/monthly"
+  },
+  {
+    "id": "OIS-SEC-001",
+    "name": "Unauthorized protected actions",
+    "profile": "niceone-obsidian",
+    "unit": "count",
+    "direction": "lower_is_better",
+    "target": 0,
+    "definition": "Protected actions completed without valid authorization in the measured scope.",
+    "source": "Runtime audit and negative tests",
+    "cadence": "continuous/per release"
+  },
+  {
+    "id": "OIS-EXEC-001",
+    "name": "Governed execution evidence coverage",
+    "profile": "niceone-obsidian",
+    "unit": "percentage",
+    "direction": "higher_is_better",
+    "target": 100,
+    "definition": "Protected execution records with all required evidence divided by protected executions.",
+    "source": "Execution evidence store",
+    "cadence": "per release"
+  },
+  {
+    "id": "OIS-STATE-001",
+    "name": "Invalid state transitions accepted",
+    "profile": "niceone-obsidian",
+    "unit": "count",
+    "direction": "lower_is_better",
+    "target": 0,
+    "definition": "Invalid state transitions accepted in measured scope.",
+    "source": "State tests and audit",
+    "cadence": "per release"
+  },
+  {
+    "id": "OIS-REC-001",
+    "name": "Recovery scenario pass rate",
+    "profile": "niceone-obsidian",
+    "unit": "percentage",
+    "direction": "higher_is_better",
+    "target": 100,
+    "definition": "Required recovery scenarios passing divided by required scenarios executed.",
+    "source": "Recovery test report",
+    "cadence": "per release"
+  },
+  {
+    "id": "OIS-TEST-001",
+    "name": "Required regression test pass rate",
+    "profile": "niceone-obsidian",
+    "unit": "percentage",
+    "direction": "higher_is_better",
+    "target": 100,
+    "definition": "Required checks passing; blocked/skipped checks reported separately.",
+    "source": "CI",
+    "cadence": "per change"
+  },
+  {
+    "id": "OIS-REL-001",
+    "name": "Release gate completion",
+    "profile": "niceone-obsidian",
+    "unit": "percentage",
+    "direction": "higher_is_better",
+    "target": 100,
+    "definition": "Applicable release criteria with verified evidence divided by applicable criteria.",
+    "source": "Release evidence bundle",
+    "cadence": "per release"
+  },
+  {
+    "id": "OIS-OBS-001",
+    "name": "Critical failure signal coverage",
+    "profile": "niceone-obsidian",
+    "unit": "percentage",
+    "direction": "higher_is_better",
+    "target": 100,
+    "definition": "Critical failure scenarios with actionable privacy-safe signal divided by defined scenarios.",
+    "source": "Observability tests",
+    "cadence": "per release"
+  },
+  {
+    "id": "AGENT-ARCH-001",
+    "name": "Unapproved architecture deviations",
+    "profile": "ai-agents",
+    "unit": "count",
+    "direction": "lower_is_better",
+    "target": 0,
+    "definition": "Agent-attributable architecture deviations without approval.",
+    "source": "Diff review and architecture checks",
+    "cadence": "per change"
+  },
+  {
+    "id": "AGENT-SCOPE-001",
+    "name": "Out-of-scope changes",
+    "profile": "ai-agents",
+    "unit": "count",
+    "direction": "lower_is_better",
+    "target": 0,
+    "definition": "Agent changes outside approved scope without renewed approval.",
+    "source": "Scope statement and diff",
+    "cadence": "per change"
+  },
+  {
+    "id": "AGENT-TEST-001",
+    "name": "Verification completion",
+    "profile": "ai-agents",
+    "unit": "percentage",
+    "direction": "higher_is_better",
+    "target": 100,
+    "definition": "Required checks actually executed and accurately reported.",
+    "source": "Command logs and CI",
+    "cadence": "per change"
+  },
+  {
+    "id": "AGENT-EVID-001",
+    "name": "Evidence-backed completion claims",
+    "profile": "ai-agents",
+    "unit": "percentage",
+    "direction": "higher_is_better",
+    "target": 100,
+    "definition": "Material claims supported by observed evidence divided by material claims sampled.",
+    "source": "Completion reports and audit",
+    "cadence": "monthly"
+  },
+  {
+    "id": "AGENT-SEC-001",
+    "name": "Unauthorized protected actions",
+    "profile": "ai-agents",
+    "unit": "count",
+    "direction": "lower_is_better",
+    "target": 0,
+    "definition": "Protected actions by agents without action-specific authorization.",
+    "source": "Runtime/platform audit",
+    "cadence": "continuous"
+  },
+  {
+    "id": "AGENT-REC-001",
+    "name": "Safe recovery rate",
+    "profile": "ai-agents",
+    "unit": "percentage",
+    "direction": "higher_is_better",
+    "target": 100,
+    "definition": "Interrupted-work cases preserving prior changes and reaching known state.",
+    "source": "Recovery tests",
+    "cadence": "per release"
+  },
+  {
+    "id": "AGENT-REG-001",
+    "name": "Agent-attributable regression rate",
+    "profile": "ai-agents",
+    "unit": "percentage",
+    "direction": "lower_is_better",
+    "definition": "Accepted agent tasks causing confirmed regressions divided by accepted tasks in a defined cohort.",
+    "source": "Defect tracking",
+    "cadence": "monthly"
+  },
+  {
+    "id": "AGENT-COST-001",
+    "name": "Cost per accepted engineering task",
+    "profile": "ai-agents",
+    "unit": "currency/task",
+    "direction": "lower_is_better",
+    "definition": "Measured model/compute/service costs divided by accepted tasks; report coverage.",
+    "source": "Usage records and task ledger",
+    "cadence": "monthly"
+  }
+]
