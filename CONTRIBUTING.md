@@ -4,6 +4,7 @@ Explain the governance problem, affected profiles/domains and evidence. Keep cha
 
 ## Local checks
 ```bash
+python -m pip install -r requirements-dev.txt
 python -m unittest discover -s tests -v
 python tooling/validate_registry.py
 python tooling/resolve_profile.py niceone-obsidian
