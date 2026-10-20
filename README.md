@@ -46,3 +46,12 @@ The policy evaluator is a reference tool, not an authorization service. Real per
 7. Preserve OIS capability maturity separately: `UNKNOWN → DESIGNED → IMPLEMENTED → TESTED → INTEGRATED → DEPLOYED → ACTIVATED → PRODUCTION VERIFIED`.
 
 NUEGS control lifecycle: `Proposed → Defined → Implemented → Tested → Verified → Adopted`. See [GOVERNANCE.md](GOVERNANCE.md) and [rollout plan](adoption/rollout-plan.md).
+
+## Review and adoption
+
+- [Baseline review (2026-10-20)](adoption/baseline-review-2026-10-20.md): evidence, findings and adoption exit criteria.
+- [P0 main-branch protection issue](https://github.com/niceoneobsidian/niceone-engineering-governance/issues/3).
+- [P1 licensing decision](https://github.com/niceoneobsidian/niceone-engineering-governance/issues/4).
+- [P1 OIS and AI-agent pilot](https://github.com/niceoneobsidian/niceone-engineering-governance/issues/5).
+
+The baseline remains proposed until its review and enforcement exit criteria are met.
