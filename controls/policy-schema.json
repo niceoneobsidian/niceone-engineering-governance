@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NUEGS Policy Control",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "status",
+    "owner",
+    "risk_min",
+    "applies_to",
+    "requirement",
+    "verification",
+    "evidence"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Z][A-Z0-9-]+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 3
+    },
+    "status": {
+      "enum": [
+        "proposed",
+        "defined",
+        "implemented",
+        "tested",
+        "verified",
+        "adopted",
+        "deprecated",
+        "superseded"
+      ]
+    },
+    "owner": {
+      "type": "string"
+    },
+    "risk_min": {
+      "enum": [
+        "R0",
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ]
+    },
+    "applies_to": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "niceone-obsidian",
+          "ai-agents"
+        ]
+      },
+      "minItems": 1
+    },
+    "requirement": {
+      "type": "string"
+    },
+    "verification": {
+      "type": "string"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    }
+  },
+  "additionalProperties": true
+}
