@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NUEGS Metric",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "profile",
+    "unit",
+    "direction",
+    "definition",
+    "source",
+    "cadence"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "profile": {
+      "enum": [
+        "niceone-obsidian",
+        "ai-agents",
+        "shared"
+      ]
+    },
+    "unit": {
+      "type": "string"
+    },
+    "direction": {
+      "enum": [
+        "lower_is_better",
+        "higher_is_better",
+        "contextual"
+      ]
+    },
+    "definition": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "cadence": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}
