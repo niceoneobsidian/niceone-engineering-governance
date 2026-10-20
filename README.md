@@ -23,9 +23,10 @@ NUEGS is the versioned, evidence-based engineering governance specification for 
 - `adoption/`: audits, rollout and maturity guidance.
 
 ## Run locally
-Requires Python 3.12+. Registry files use JSON syntax, which is valid YAML, so initial tooling needs only the standard library.
+Requires Python 3.12+. Registry files use JSON syntax, which is valid YAML, so registry tooling needs only the standard library. The test suite uses the pinned JSON Schema dependency in `requirements-dev.txt` to validate registry entries against schemas.
 
 ```bash
+python -m pip install -r requirements-dev.txt
 python -m unittest discover -s tests -v
 python tooling/validate_registry.py
 python tooling/resolve_profile.py niceone-obsidian
