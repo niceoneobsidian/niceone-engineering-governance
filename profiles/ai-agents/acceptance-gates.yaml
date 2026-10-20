@@ -1,0 +1,90 @@
+[
+  {
+    "id": "AGENT-ARCH-001",
+    "name": "Architecture compliance",
+    "required": true,
+    "risk_min": "R2",
+    "acceptance": "No unapproved architecture deviations.",
+    "evidence": [
+      "diff_review",
+      "decision_reference"
+    ]
+  },
+  {
+    "id": "AGENT-SCOPE-001",
+    "name": "Change scope",
+    "required": true,
+    "risk_min": "R1",
+    "acceptance": "Changes stay within approved scope.",
+    "evidence": [
+      "scope_statement",
+      "diff_review"
+    ]
+  },
+  {
+    "id": "AGENT-TEST-001",
+    "name": "Verification completed",
+    "required": true,
+    "risk_min": "R1",
+    "acceptance": "Required checks ran and results/skips are reported accurately.",
+    "evidence": [
+      "commands_and_results",
+      "revision"
+    ]
+  },
+  {
+    "id": "AGENT-EVID-001",
+    "name": "Evidence-backed claims",
+    "required": true,
+    "risk_min": "R1",
+    "acceptance": "Material completion claims link to observed evidence.",
+    "evidence": [
+      "completion_report",
+      "evidence_references"
+    ]
+  },
+  {
+    "id": "AGENT-SEC-001",
+    "name": "Protected action control",
+    "required": true,
+    "risk_min": "R3",
+    "acceptance": "No protected action without trusted authorization.",
+    "evidence": [
+      "permission_configuration",
+      "authorization_tests"
+    ]
+  },
+  {
+    "id": "AGENT-REC-001",
+    "name": "Safe recovery",
+    "required": true,
+    "risk_min": "R2",
+    "acceptance": "Interrupted work preserves prior changes and leaves known state.",
+    "evidence": [
+      "before_after_status",
+      "recovery_record"
+    ]
+  },
+  {
+    "id": "AGENT-REG-001",
+    "name": "Regression control",
+    "required": true,
+    "risk_min": "R2",
+    "acceptance": "Relevant tests pass or failures are reported.",
+    "evidence": [
+      "test_report",
+      "failure_disposition"
+    ]
+  },
+  {
+    "id": "AGENT-COST-001",
+    "name": "Cost awareness",
+    "required": false,
+    "risk_min": "R2",
+    "acceptance": "Measured costs remain within approved budget.",
+    "evidence": [
+      "usage_record",
+      "budget_reference"
+    ]
+  }
+]

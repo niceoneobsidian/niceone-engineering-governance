@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NUEGS Evidence Record",
+  "type": "object",
+  "required": [
+    "evidence_id",
+    "control_id",
+    "target",
+    "revision",
+    "method",
+    "result",
+    "observed_at",
+    "review_status"
+  ],
+  "properties": {
+    "evidence_id": {
+      "type": "string"
+    },
+    "control_id": {
+      "type": "string"
+    },
+    "target": {
+      "type": "string"
+    },
+    "revision": {
+      "type": "string"
+    },
+    "method": {
+      "type": "string"
+    },
+    "result": {
+      "enum": [
+        "passed",
+        "failed",
+        "blocked",
+        "skipped",
+        "not_run",
+        "informational"
+      ]
+    },
+    "observed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "actor": {
+      "type": "string"
+    },
+    "review_status": {
+      "enum": [
+        "unreviewed",
+        "accepted",
+        "rejected",
+        "needs_follow_up"
+      ]
+    },
+    "artifact_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "limitations": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

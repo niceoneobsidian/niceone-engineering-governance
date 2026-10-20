@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "External Standard Reference",
+  "type": "object",
+  "required": [
+    "id",
+    "publisher",
+    "title",
+    "source_url",
+    "status",
+    "mapping_status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "publisher": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "source_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "status": {
+      "enum": [
+        "verified_source",
+        "candidate",
+        "superseded",
+        "withdrawn",
+        "unavailable_to_verify"
+      ]
+    },
+    "mapping_status": {
+      "enum": [
+        "not_assessed",
+        "partial",
+        "mapped",
+        "assessed"
+      ]
+    }
+  },
+  "additionalProperties": true
+}

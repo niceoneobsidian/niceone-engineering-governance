@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "default_deny": true,
+  "authority_levels": [
+    {
+      "level": "A0",
+      "name": "Read",
+      "allowed": [
+        "read approved files",
+        "inspect status/history"
+      ],
+      "denied": [
+        "mutations",
+        "publishing",
+        "deployment"
+      ]
+    },
+    {
+      "level": "A1",
+      "name": "Propose",
+      "allowed": [
+        "draft plans and patches"
+      ],
+      "denied": [
+        "write",
+        "commit",
+        "open PR",
+        "external side effects"
+      ]
+    },
+    {
+      "level": "A2",
+      "name": "Bounded Implement",
+      "allowed": [
+        "modify approved paths",
+        "run permitted checks"
+      ],
+      "denied": [
+        "production deploy",
+        "secret rotation",
+        "destructive data change",
+        "permission change unless separately authorized"
+      ]
+    },
+    {
+      "level": "A3",
+      "name": "Governed Execute",
+      "allowed": [
+        "only specifically approved high-impact action"
+      ],
+      "requires": [
+        "action-specific approval",
+        "trusted runtime enforcement",
+        "scope and expiry",
+        "risk review",
+        "durable evidence"
+      ]
+    }
+  ],
+  "permission_dimensions": [
+    "actor",
+    "action",
+    "resource",
+    "scope",
+    "environment",
+    "risk_class",
+    "approval_reference",
+    "expiry",
+    "policy_version"
+  ],
+  "rules": [
+    "Authority level is a ceiling, not a blanket grant.",
+    "Permissions must be enforced by runtime/platform, not prompt text.",
+    "Missing authorization denies protected actions.",
+    "Do not expose secrets unless necessary and authorized.",
+    "Do not force-push, rewrite shared history, delete user work or change protections without explicit authorization.",
+    "External side effects need separate action-specific grant."
+  ]
+}

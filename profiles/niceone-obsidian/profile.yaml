@@ -1,0 +1,30 @@
+{
+  "id": "niceone-obsidian",
+  "name": "Niceone Obsidian Profile",
+  "version": "0.1.0",
+  "status": "proposed",
+  "purpose": "Govern OIS architecture, authorization, execution, state, recovery, evidence, security, observability and production acceptance.",
+  "required_domains": [
+    "system-architecture",
+    "software-design",
+    "security-architecture",
+    "application-development",
+    "testing-quality-assurance",
+    "observability-monitoring",
+    "release-deployment-management",
+    "ai-agent-architecture",
+    "governance-continuous-improvement"
+  ],
+  "acceptance_gates": "acceptance-gates.yaml",
+  "principle": "Reasoning proposes actions; policy authorizes; execution records; validation and evidence determine acceptance.",
+  "maturity_lifecycle": [
+    "UNKNOWN",
+    "DESIGNED",
+    "IMPLEMENTED",
+    "TESTED",
+    "INTEGRATED",
+    "DEPLOYED",
+    "ACTIVATED",
+    "PRODUCTION VERIFIED"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "ai-agents",
+  "name": "AI Coding Agents Profile",
+  "version": "0.1.0",
+  "status": "proposed",
+  "purpose": "Govern repository-aware AI agents from discovery through scoped changes, verification, recovery and evidence-backed reporting.",
+  "required_domains": [
+    "software-development-lifecycle",
+    "requirements-engineering",
+    "system-architecture",
+    "software-design",
+    "application-development",
+    "testing-quality-assurance",
+    "security-architecture",
+    "devops-ci-cd",
+    "documentation-knowledge-management",
+    "governance-continuous-improvement"
+  ],
+  "acceptance_gates": "acceptance-gates.yaml",
+  "authority_levels": {
+    "A0": "Read approved resources",
+    "A1": "Propose plans or patches; no mutation",
+    "A2": "Implement bounded changes and run permitted checks in approved scope",
+    "A3": "Governed execution of specifically authorized high-impact actions"
+  },
+  "default_authority": "A2 only for approved scoped changes; external/protected side effects need separate authorization."
+}

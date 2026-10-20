@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "NUEGS Profile",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "version",
+    "status",
+    "purpose",
+    "acceptance_gates"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "proposed",
+        "defined",
+        "implemented",
+        "tested",
+        "verified",
+        "adopted",
+        "deprecated"
+      ]
+    },
+    "purpose": {
+      "type": "string"
+    },
+    "required_domains": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "acceptance_gates": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

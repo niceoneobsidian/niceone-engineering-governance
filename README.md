@@ -1,1 +1,47 @@
-# niceone-engineering-governance
+# Niceone Unified Engineering Governance Specification (NUEGS)
+
+NUEGS is the versioned, evidence-based engineering governance specification for Niceone repositories. It defines reusable rules and profiles for Niceone Obsidian (OIS) and AI coding agents.
+
+> NUEGS defines the rules. Profiles define how rules apply. Repositories implement controls. Recorded evidence determines what has actually been verified.
+
+## Status
+- Version: see [VERSION](VERSION).
+- Stage: initial proposed baseline; no target repository is presumed compliant.
+- Profiles: [Niceone Obsidian](profiles/niceone-obsidian/profile.yaml), [AI Agents](profiles/ai-agents/profile.yaml).
+- Domain coverage: 20 domains listed in [domain registry](domains/domain-registry.yaml).
+
+## Structure
+- `foundations/`: authority, principles, risk, exceptions, lifecycle.
+- `standards/`: external standard references and mapping rules.
+- `profiles/`: profile-specific controls and acceptance gates.
+- `domains/`: 20 engineering-domain profiles.
+- `controls/`: canonical control registry and enforcement map.
+- `metrics/`: metric definitions.
+- `schemas/`: machine-readable schema contracts.
+- `tooling/`: registry validation, profile resolution, policy evaluation.
+- `tests/`: deterministic tests.
+- `adoption/`: audits, rollout and maturity guidance.
+
+## Run locally
+Requires Python 3.12+. Registry files use JSON syntax, which is valid YAML, so initial tooling needs only the standard library.
+
+```bash
+python -m unittest discover -s tests -v
+python tooling/validate_registry.py
+python tooling/resolve_profile.py niceone-obsidian
+python tooling/resolve_profile.py ai-agents
+python tooling/evaluate_policy.py --profile ai-agents --action protected_write --risk R2
+```
+
+The policy evaluator is a reference tool, not an authorization service. Real permissions must be enforced by trusted runtime, GitHub, CI, operating-system or deployment controls.
+
+## Rules
+1. Applicable law, contracts and mandatory security obligations take precedence.
+2. Prompts and model outputs do not grant permissions.
+3. Controls require owners, stable IDs, verification methods and evidence.
+4. Missing or failed required checks are not passes.
+5. Exceptions must be scoped, approved, risk-assessed and time-limited.
+6. Do not claim compliance, certification or production readiness from documentation alone.
+7. Preserve OIS capability maturity separately: `UNKNOWN → DESIGNED → IMPLEMENTED → TESTED → INTEGRATED → DEPLOYED → ACTIVATED → PRODUCTION VERIFIED`.
+
+NUEGS control lifecycle: `Proposed → Defined → Implemented → Tested → Verified → Adopted`. See [GOVERNANCE.md](GOVERNANCE.md) and [rollout plan](adoption/rollout-plan.md).

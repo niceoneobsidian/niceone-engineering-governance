@@ -1,0 +1,142 @@
+[
+  {
+    "id": "CORE-AUTH-001",
+    "title": "Explicit authorization for protected actions",
+    "status": "defined",
+    "owner": "security-control-owner",
+    "risk_min": "R3",
+    "applies_to": [
+      "niceone-obsidian",
+      "ai-agents"
+    ],
+    "requirement": "Protected actions require explicit scoped authorization enforced by a trusted boundary.",
+    "verification": "Positive and negative authorization tests.",
+    "evidence": [
+      "policy_version",
+      "authorization_result",
+      "test_report"
+    ]
+  },
+  {
+    "id": "CORE-SCOPE-001",
+    "title": "Approved task scope",
+    "status": "defined",
+    "owner": "repository-maintainer",
+    "risk_min": "R1",
+    "applies_to": [
+      "niceone-obsidian",
+      "ai-agents"
+    ],
+    "requirement": "Material changes remain within declared scope or receive renewed approval.",
+    "verification": "Compare approved scope with diff and action records.",
+    "evidence": [
+      "scope_record",
+      "diff_or_action_log"
+    ]
+  },
+  {
+    "id": "CORE-SEC-001",
+    "title": "Secret protection",
+    "status": "defined",
+    "owner": "security-control-owner",
+    "risk_min": "R2",
+    "applies_to": [
+      "niceone-obsidian",
+      "ai-agents"
+    ],
+    "requirement": "Secrets are not committed or unnecessarily exposed in logs, prompts or evidence.",
+    "verification": "Secret scanning and review.",
+    "evidence": [
+      "secret_scan_result",
+      "finding_disposition"
+    ]
+  },
+  {
+    "id": "CORE-TEST-001",
+    "title": "Risk-based verification",
+    "status": "defined",
+    "owner": "quality-owner",
+    "risk_min": "R1",
+    "applies_to": [
+      "niceone-obsidian",
+      "ai-agents"
+    ],
+    "requirement": "Required tests are selected by risk and results are reported truthfully.",
+    "verification": "CI results and change-specific test report.",
+    "evidence": [
+      "test_plan",
+      "test_results",
+      "revision"
+    ]
+  },
+  {
+    "id": "CORE-EVID-001",
+    "title": "Evidence-backed completion",
+    "status": "defined",
+    "owner": "repository-maintainer",
+    "risk_min": "R1",
+    "applies_to": [
+      "niceone-obsidian",
+      "ai-agents"
+    ],
+    "requirement": "Claims about writes, tests, merges or deployments require direct evidence.",
+    "verification": "Compare report claims with artifacts and logs.",
+    "evidence": [
+      "revision_or_artifact",
+      "verification_record"
+    ]
+  },
+  {
+    "id": "CORE-REC-001",
+    "title": "Safe failure and recovery",
+    "status": "defined",
+    "owner": "runtime-owner",
+    "risk_min": "R2",
+    "applies_to": [
+      "niceone-obsidian",
+      "ai-agents"
+    ],
+    "requirement": "Failures preserve prior work, avoid unsafe retries and leave a known state.",
+    "verification": "Interruption and recovery tests.",
+    "evidence": [
+      "recovery_test_result",
+      "state_record"
+    ]
+  },
+  {
+    "id": "CORE-EXC-001",
+    "title": "Time-bound exceptions",
+    "status": "defined",
+    "owner": "governance-owner",
+    "risk_min": "R2",
+    "applies_to": [
+      "niceone-obsidian",
+      "ai-agents"
+    ],
+    "requirement": "Exceptions are scoped, approved, risk-assessed and time-limited.",
+    "verification": "Validate fields, approval and expiry.",
+    "evidence": [
+      "exception_record",
+      "approval",
+      "expiry"
+    ]
+  },
+  {
+    "id": "CORE-REV-001",
+    "title": "Review material changes",
+    "status": "defined",
+    "owner": "repository-maintainer",
+    "risk_min": "R2",
+    "applies_to": [
+      "niceone-obsidian",
+      "ai-agents"
+    ],
+    "requirement": "Material changes receive appropriate review and protected branches enforce required checks.",
+    "verification": "Review records and server-side settings.",
+    "evidence": [
+      "review_record",
+      "ruleset_snapshot",
+      "required_check_results"
+    ]
+  }
+]
