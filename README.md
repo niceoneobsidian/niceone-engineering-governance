@@ -23,14 +23,15 @@ NUEGS is the versioned, evidence-based engineering governance specification for 
 - `adoption/`: audits, rollout and maturity guidance.
 
 ## Run locally
-Requires Python 3.12+. Registry files use JSON syntax, which is valid YAML, so initial tooling needs only the standard library.
+Requires Python 3.12+. Registry files use JSON syntax, which is valid YAML, so registry tooling needs only the standard library. The test suite uses the pinned JSON Schema dependency in `requirements-dev.txt` to validate registry entries against schemas.
 
 ```bash
+python -m pip install -r requirements-dev.txt
 python -m unittest discover -s tests -v
 python tooling/validate_registry.py
 python tooling/resolve_profile.py niceone-obsidian
 python tooling/resolve_profile.py ai-agents
-python tooling/evaluate_policy.py --profile ai-agents --action protected_write --risk R2
+python tooling/evaluate_policy.py --profile ai-agents --action read --risk R0
 ```
 
 The policy evaluator is a reference tool, not an authorization service. Real permissions must be enforced by trusted runtime, GitHub, CI, operating-system or deployment controls.
@@ -45,3 +46,12 @@ The policy evaluator is a reference tool, not an authorization service. Real per
 7. Preserve OIS capability maturity separately: `UNKNOWN → DESIGNED → IMPLEMENTED → TESTED → INTEGRATED → DEPLOYED → ACTIVATED → PRODUCTION VERIFIED`.
 
 NUEGS control lifecycle: `Proposed → Defined → Implemented → Tested → Verified → Adopted`. See [GOVERNANCE.md](GOVERNANCE.md) and [rollout plan](adoption/rollout-plan.md).
+
+## Review and adoption
+
+- [Baseline review (2026-10-20)](adoption/baseline-review-2026-10-20.md): evidence, findings and adoption exit criteria.
+- [P0 main-branch protection issue](https://github.com/niceoneobsidian/niceone-engineering-governance/issues/3).
+- [P1 licensing decision](https://github.com/niceoneobsidian/niceone-engineering-governance/issues/4).
+- [P1 OIS and AI-agent pilot](https://github.com/niceoneobsidian/niceone-engineering-governance/issues/5).
+
+The baseline remains proposed until its review and enforcement exit criteria are met.
