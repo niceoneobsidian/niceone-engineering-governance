@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased — baseline review
+- Record the initial repository governance and validation findings.
+- Strengthen registry cross-reference validation and fail-closed reference policy behavior.
+- Validate registered documents against JSON Schemas in CI.
+- Track branch protection, licensing and downstream adoption as open actions.
+
+
 ## 0.1.0 — Initial baseline
 - Establish governance foundations and authority hierarchy.
 - Define OIS and AI-agent profiles.
