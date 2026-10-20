@@ -5,8 +5,11 @@ NUEGS is the versioned, evidence-based engineering governance specification for 
 > NUEGS defines the rules. Profiles define how rules apply. Repositories implement controls. Recorded evidence determines what has actually been verified.
 
 ## Status
-- Version: see [VERSION](VERSION).
-- Stage: initial proposed baseline; no target repository is presumed compliant.
+- Current version: see [VERSION](VERSION) (0.1.0).
+- Release status: **v1.0 not released; readiness gates remain open**.
+- Latest readiness assessment: [NUEGS v1.0 readiness gate](adoption/v1.0-readiness-2026-10-20.md).
+- Adoption assessment: [OIS and Agent Weave pilot](adoption/ois-agent-weave-pilot-2026-10-20.md).
+- Release requirements: [RELEASE.md](RELEASE.md).
 - Profiles: [Niceone Obsidian](profiles/niceone-obsidian/profile.yaml), [AI Agents](profiles/ai-agents/profile.yaml).
 - Domain coverage: 20 domains listed in [domain registry](domains/domain-registry.yaml).
 
@@ -48,10 +51,12 @@ The policy evaluator is a reference tool, not an authorization service. Real per
 NUEGS control lifecycle: `Proposed → Defined → Implemented → Tested → Verified → Adopted`. See [GOVERNANCE.md](GOVERNANCE.md) and [rollout plan](adoption/rollout-plan.md).
 
 ## Review and adoption
-
-- [Baseline review (2026-10-20)](adoption/baseline-review-2026-10-20.md): evidence, findings and adoption exit criteria.
+- [Baseline review (2026-10-20)](adoption/baseline-review-2026-10-20.md): original findings and exit criteria.
+- [v1.0 readiness gate (2026-10-20)](adoption/v1.0-readiness-2026-10-20.md): explicit status for all eight completion outcomes and release blockers.
+- [OIS and Agent Weave pilot (2026-10-20)](adoption/ois-agent-weave-pilot-2026-10-20.md): initial remote-only target assessment.
+- [Release policy](RELEASE.md): versioning, release evidence and mandatory v1.0 gates.
 - [P0 main-branch protection issue](https://github.com/niceoneobsidian/niceone-engineering-governance/issues/3).
 - [P1 licensing decision](https://github.com/niceoneobsidian/niceone-engineering-governance/issues/4).
 - [P1 OIS and AI-agent pilot](https://github.com/niceoneobsidian/niceone-engineering-governance/issues/5).
 
-The baseline remains proposed until its review and enforcement exit criteria are met.
+Do not mark a target compliant or adopted until its current revision, implementation, tests, enforcement and evidence have been independently reviewed.
